@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  background-color: #2b3f8d;
+}
+
+li {
+  list-style-type: none;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+  border-left: 1px solid #fff;
+}
+
+span {
+  padding: 0 0px;
+}
