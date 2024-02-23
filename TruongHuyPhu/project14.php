@@ -35,7 +35,8 @@
 
     ?>
     <div class="container mt-5">
-        <p class="underline fw-bold h4">Basic Info</p>
+        <p class="underline fw-bold">Basic Info</p>
+        <hr>
         <table class="table table-borderless">
             <tbody>
             <tr class="row d-flex align-items-center">
@@ -104,7 +105,8 @@
             </tr>
             </tbody>
         </table>
-        <p class="underline fw-bold h4">Contact Info</p>
+        <p class="underline fw-bold">Contact Info</p>
+        <hr>
         <table class="table table-borderless">
             <tbody>
             <tr class="row d-flex align-items-center">
