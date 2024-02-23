@@ -1,0 +1,27 @@
+.course {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.course h2 {
+  font-size: 12px;
+  color: #333;
+}
+
+.course p {
+  color: #666;
+}
+
+.container > h2 {
+  color: brown;
+  border-left: 4px solid brown;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.row h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
