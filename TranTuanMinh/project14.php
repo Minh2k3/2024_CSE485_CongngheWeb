@@ -57,22 +57,22 @@
         <table class="table table-borderless">
             <tbody>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Employee ID</td>
-                    <td class="col-10">9</td>
+                    <td class="col-sm-2  col-md-2  fw-bold">Employee ID</td>
+                    <td class="col-sm-10 col-md-10 ">9</td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Last name</td>
-                    <td class="col-10">Dodsworth</td>
+                    <td class="col-sm-2  col-md-2  fw-bold">Last name</td>
+                    <td class="col-sm-10 col-md-10 ">Dodsworth</td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">First name</td>
-                    <td class="col-10" style="width=100%">
-                        <input type="text" class="col-12" style="width=100%" value="Anne">
+                    <td class="col-sm-2  col-md-2  fw-bold">First name</td>
+                    <td class="col-sm-10 col-md-10 " style="width=100%">
+                        <input type="text" class="col-sm-12 col-md-12 " style="width=100%" value="Anne">
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold ">Gender</td>
-                    <td class="col-10">
+                    <td class="col-sm-2  col-md-2  fw-bold ">Gender</td>
+                    <td class="col-sm-10 col-md-10 ">
                         <input type="radio" name="option" id="" value="Male"> Male<br>
                         <input type="radio" name="option" id="" value="Female"> Female<br>
                         <input type="radio" name="option" id="" value="XXX"> XXX<br>
@@ -80,39 +80,39 @@
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Title</td>
-                    <td class="col-10">
-                        <input type="text" class="col-12" style="width=100%" value="Sales Representative">
+                    <td class="col-sm-2  col-md-2  fw-bold">Title</td>
+                    <td class="col-sm-10 col-md-10 ">
+                        <input type="text" class="col-sm-12 col-md-12 " style="width=100%" value="Sales Representative">
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Suffix</td>
-                    <td class="col-10">
-                        <input type="text" class="col-12" style="width=100%" value="Ms.">
+                    <td class="col-sm-2  col-md-2  fw-bold">Suffix</td>
+                    <td class="col-sm-10 col-md-10 ">
+                        <input type="text" class="col-sm-12 col-md-12 " style="width=100%" value="Ms.">
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">BirthDate</td>
-                    <td class="col-10">
-                        <input type="text" class="col-12" style="width=100%" value="1969-07-02 00:00:00">
+                    <td class="col-sm-2  col-md-2  fw-bold">BirthDate</td>
+                    <td class="col-sm-10 col-md-10 ">
+                        <input type="text" class="col-sm-12 col-md-12 " style="width=100%" value="1969-07-02 00:00:00">
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">HireDate</td>
-                    <td class="col-10">
-                        <input type="text" class="col-12" style="width=100%" value="1994-11-15 00:00:00">
+                    <td class="col-sm-2  col-md-2  fw-bold">HireDate</td>
+                    <td class="col-sm-10 col-md-10 ">
+                        <input type="text" class="col-sm-12 col-md-12 " style="width=100%" value="1994-11-15 00:00:00">
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">SSN # (if applicable)</td>
-                    <td class="col-10">
-                        <input type="text" class="col-12" style="width=100%" value="">
+                    <td class="col-sm-2  col-md-2  fw-bold">SSN # (if applicable)</td>
+                    <td class="col-sm-10 col-md-10 ">
+                        <input type="text" class="col-sm-12 col-md-12 " style="width=100%" value="">
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Reports to</td>
-                    <td class="col-10">
-                        <select class="form-select col-3">
+                    <td class="col-sm-2  col-md-2  fw-bold">Reports to</td>
+                    <td class="col-sm-10 col-md-10 ">
+                        <select class="form-select col-sm-3 col-md-3" >
                             <option>Buchanan</option>
                             <option>Himakevolution</option>
                             <option>TMinh</option>
@@ -126,39 +126,39 @@
             <table class="table table-borderless">
                 <tbody>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold">Email</td>
-                        <td class="col-10">
-                            <input type="text" class="col-12"  placeholder="name@example.com">
+                        <td class="col-sm-2  col-md-2  fw-bold">Email</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <input type="text" class="col-sm-12 col-md-12 "  placeholder="name@example.com">
                         </td>
                     </tr>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold">Andress</td>
-                        <td class="col-10">
-                            <input type="text" class="col-12" value="7 Houndstooth Rd.">
+                        <td class="col-sm-2  col-md-2  fw-bold">Andress</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <input type="text" class="col-sm-12 col-md-12 " value="7 Houndstooth Rd.">
                         </td>
                     </tr>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold">City</td>
-                        <td class="col-10">
-                            <input type="text" class="col-12" value="London">
+                        <td class="col-sm-2  col-md-2  fw-bold">City</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <input type="text" class="col-sm-12 col-md-12 " value="London">
                         </td>
                     </tr>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold ">Region</td>
-                        <td class="col-10">
-                            <input type="text" class="col-12" name="option" id="" value="">
+                        <td class="col-sm-2  col-md-2  fw-bold ">Region</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <input type="text" class="col-sm-12 col-md-12 " name="option" id="" value="">
                         </td>
                     </tr>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold">Postal Code</td>
-                        <td class="col-10">
-                            <input type="text" class="col-12"value="WG2 7LT">
+                        <td class="col-sm-2  col-md-2  fw-bold">Postal Code</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <input type="text" class="col-sm-12 col-md-12 "value="WG2 7LT">
                         </td>
                     </tr>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold">Country</td>
-                        <td class="col-10">
-                            <select class="form-select col-3">
+                        <td class="col-sm-2  col-md-2  fw-bold">Country</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <select class="form-select col-sm-3 col-md-3" >
                                 <?php
                                     foreach ($countries as $country) {
                                         echo '<option>' . $country . '</option>';
@@ -168,15 +168,15 @@
                         </td>
                     </tr>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold ">US Home Phone</td>
-                        <td class="col-10">
-                            <input type="text" class="col-12" name="option" id="" value="(234)234-2342">
+                        <td class="col-sm-2  col-md-2  fw-bold ">US Home Phone</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <input type="text" class="col-sm-12 col-md-12 " name="option" id="" value="(234)234-2342">
                         </td>
                     </tr>
                     <tr class="row d-flex align-items-center">
-                        <td class="col-2 fw-bold">Photo</td>
-                        <td class="col-10">
-                            <input type="text" class="col-12" style="width=100%" value="EmpID9.bmp">
+                        <td class="col-sm-2  col-md-2  fw-bold">Photo</td>
+                        <td class="col-sm-10 col-md-10 ">
+                            <input type="text" class="col-sm-12 col-md-12 " style="width=100%" value="EmpID9.bmp">
                         </td>
                     </tr>
                 </tbody>
@@ -185,34 +185,34 @@
         <table class="table table-borderless">
             <tbody>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Notes</td>
-                    <td class="col-10">
+                    <td class="col-sm-2  col-md-2  fw-bold">Notes</td>
+                    <td class="col-sm-10 col-md-10 ">
                         <textarea name="post_content" id="post_content" rows="10" cols="100"></textarea>
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Preferred Shift</td>
-                    <td class="col-10">
+                    <td class="col-sm-2  col-md-2  fw-bold">Preferred Shift</td>
+                    <td class="col-sm-10 col-md-10 ">
                         <input type="checkbox" name="shift" id="" value="Regular"> Regular<br>
                         <input type="checkbox" name="shift" id="" value="GravyYard"> Gravy Yard                    </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Active?</td>
-                    <td class="col-10">
+                    <td class="col-sm-2  col-md-2  fw-bold">Active?</td>
+                    <td class="col-sm-10 col-md-10 ">
                         <input type="checkbox" name="active" id="" value="isActive">
                     </td>
                 </tr>
                 <tr class="row d-flex align-items-center">
-                    <td class="col-2 fw-bold">Are you human?</td>
-                    <td class="col-10">
+                    <td class="col-sm-2  col-md-2  fw-bold">Are you human?</td>
+                    <td class="col-sm-10 col-md-10 ">
                         <div>
                             <p id="randomWord" class="fw-bold display-3">
                                 <?php
                                     printCode();
                                 ?>
                             </p>
-                            <button type="button" class="fw-bold col-12 border-0 bg-white" id="btnChange">Click to change</button>
-                            <input type="text" class="col-12" name="human" id="">
+                            <button type="button" class="fw-bold col-sm-12 col-md-12  border-0 bg-white" id="btnChange">Click to change</button>
+                            <input type="text" class="col-sm-12 col-md-12 " name="human" id="">
                         </div>
                     </td>
                 </tr>
@@ -242,7 +242,8 @@
         $chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         $word = "";
         for ($i = 0; $i < $length; $i++) {
-            $word .= $chars[mt_rand(0, strlen($chars) - 1)] . " ";
+            $randomChar = chr(rand(0, 25) + ord('A'));
+            $word .= $randomChar . " ";
         }
         return $word;
     }
