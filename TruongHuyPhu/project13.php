@@ -81,29 +81,27 @@
                 'duration' => '30 giờ'
             ],
         ];
-// Hien thi khoa hoc
-    echo '<div class="container-fluid mt-5">';
-        echo '<h1 style="color: rgba(255,0,0,0.45)">KHÓA HỌC SẮP KHAI GIẢNG</h1>';
-        echo '<div class="row">';
-        $courseCount = 0;
-        foreach ($courses as $course) {
-            if ($courseCount % 3 == 0) {
-                echo '<div class="w-100"></div>'; // Tạo một dòng mới sau mỗi hàng
-            }
-            echo '<div class="course col-sm-4">';
-                echo '<img src="./Img/6033159_2 - Copy.jpg" style="width: 100%">';
-                echo "<h5> {$course['title']} </h5>";
-                echo "<p> {$course['description']} </p>";
-                echo "<p> <i class='fa fa-gift'></i> {$course['fee']} </p>";
-                echo "<p> <i class='fa-solid fa-clock'></i> Khai giảng:{$course['start_date']} </p>";
-                echo "<p> <i class='fa fa-bookmark'></i> Thời lượng:{$course['duration']} </p>";
+        // Hien thi khoa hoc
+        echo '<div class="container-fluid mt-5">';
+            echo '<h1 style="color: rgba(255,0,0,0.45)">KHÓA HỌC SẮP KHAI GIẢNG</h1>';
+            echo '<div class="row">';
+                $courseCount = 0;
+                foreach ($courses as $course) {
+                    if ($courseCount % 3 == 0) {
+                        echo '<div class="w-100"></div>'; // Tạo một dòng mới sau mỗi hàng
+                    }
+                    echo '<div class="course col-sm-4">';
+                        echo '<img src="./Img/6033159_2 - Copy.jpg" style="width: 100%">';
+                        echo "<h5> {$course['title']} </h5>";
+                        echo "<p> {$course['description']} </p>";
+                        echo "<p> <i class='fa fa-gift'></i> {$course['fee']} </p>";
+                        echo "<p> <i class='fa-solid fa-clock'></i> Khai giảng:{$course['start_date']} </p>";
+                        echo "<p> <i class='fa fa-bookmark'></i> Thời lượng:{$course['duration']} </p>";
+                    echo '</div>';
+                    $courseCount++;
+                }
             echo '</div>';
-            $courseCount++;
-        }
         echo '</div>';
-    echo '</div>';
-
     ?>
-
 </body>
 </html>
