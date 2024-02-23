@@ -1,0 +1,15 @@
+hr {
+  height: 3px; /* Đặt chiều cao là 10px */
+  background-color: black; /* Màu nền của phần ngang */
+  border: none; /* Loại bỏ viền */
+  margin-top: -4px;
+}
+
+.container h4 {
+  margin-top: 16px;
+  padding-top: 10px;
+}
+
+h1 {
+  font-style: oblique;
+}
