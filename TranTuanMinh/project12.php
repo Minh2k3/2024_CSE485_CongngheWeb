@@ -21,28 +21,92 @@
             padding: 0 10px;
         }
 
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            background-color: #275e97;
+        }
+
+        .dropdown:hover  {
+            background-color: #275e97;
+        }
+
+        .dropdown-item:hover {
+            background-color: #275e97;
+            color: #729ce4;
+        }
     </style>
 </head>
 <body>
     <?php
         $navItems = [
-            "GIỚI THIỆU",
-            "TIN TỨC & THÔNG BÁO",
-            "TUYỂN SINH",
-            "ĐÀO TẠO",
-            "NGHIÊN CỨU",
-            "ĐỐI NGOẠI",
-            "VĂN BẢN",
-            "SINH VIÊN",
-            "LIÊN HỆ"
+            "GIỚI THIỆU" => [
+                "Tổng quan",
+                "Sứ mệnh - Tầm nhìn",
+                "Cơ cấu tổ chức và nhân lực",
+                "Cơ sở vật chất",
+                "Công tác Đảng",
+                "Công tác Công đoàn"
+            ],
+            "TIN TỨC & THÔNG BÁO" => [
+                "Tin tức",
+                "Thông báo"
+            ],
+            "TUYỂN SINH" => [
+                "Tuyển sinh đại học",
+                "Tuyển sinh thạc sĩ",
+                "Tuyển sinh tiến sĩ",
+                "Vừa làm vừa học",
+            ],
+            "ĐÀO TẠO" => [
+                "Thạc sĩ",
+                "Đại học chính quy",
+                "Cam kết đảm bảo chất lượng đào tạo",
+                "Thông báo, tin tức dhcq",
+                "Tiến sĩ",
+                "Vừa làm vừa học",
+            ],
+            "NGHIÊN CỨU" => [
+                "Tin khoa học công nghệ",
+                "Tạp chí khoa học",
+            ],
+            "ĐỐI NGOẠI" => [
+                "Giới thiệu chung",
+                "Dự án quốc tế",
+                "Hợp tác đào tạo quốc tế",
+                "Tin tức đối ngoại",
+                "Liên hệ",
+                "Thoả thuận hợp tác",
+            ],
+            "VĂN BẢN" => [
+
+            ],
+            "SINH VIÊN" => [
+                "Thông báo",
+                "Hỗ trợ sinh viên",
+                "Gương mặt sinh viên",
+                "Hoạt động sinh viên",
+                "Học phí",
+                "Gương mặt cựu sinh viên",
+                "Danh sách sinh viên tốt nghiệp",
+                "Giáo viên chủ nhiệm"
+            ],
+            "LIÊN HỆ" => []
         ];
         echo '<nav class="navbar navbar-expand navbar-light mt-5">';
             echo '<div class="container-fluid">';
                 echo '<ul class="navbar-nav">';
                     echo '<li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house text-white" style="font-size: 24px; margin-left: -5px"></i></a></li>';
-                    foreach ($navItems as $item) {
-                        echo '<li class="nav-item border-left">';
-                        echo '<a class="nav-link text-white" href="#">'. $item . '</a></li>';
+                    foreach ($navItems as $key => $value) {
+                        echo '<li class="nav-item border-left dropdown">';
+                            echo '<a class="nav-link text-white" href="#">'. $key . '</a>';
+                            if ($value != []) {
+                                echo '<div class="dropdown-menu bg-drop" aria-labelledby="navbarDropdown">';
+                                foreach ($value as $item) {
+                                    echo '<a class="dropdown-item text-white bg-drop" href="#">' . $item . '</a>';
+                                }
+                                echo '</div>';
+                            }
+                        echo '</li>';
                     }
         echo '</ul></div></nav>';
     ?>
