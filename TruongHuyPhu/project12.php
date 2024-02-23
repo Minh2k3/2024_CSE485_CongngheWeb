@@ -34,7 +34,7 @@
 <body>
     <?php
         $navItems = [
-                "GIỚI THIỆU",
+            "GIỚI THIỆU",
             "TIN TỨC & THÔNG BÁO",
             "TUYỂN SINH",
             "ĐÀO TẠO",
