@@ -58,32 +58,32 @@
             ],
             [
                 'title' => 'LẬP TRÌNH PHP & LARAVEL',
-                'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
-                Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
-                quốc tế.',
-                'fee' => '9.600.000 VND','start_date' => '2/2/24',
+                'description' => 'PHP là một trong các ngôn ngữ thiết kế web mạnh nhất.
+                Khóa học trang bị kỹ năng xây dựng web hoàn chỉnh sử dụng PHP kết hợp 
+                Laravel Framework.',
+                'fee' => '9.600.000 VND',
+                'start_date' => '5/2/24',
                 'duration' => '36 giờ'
             ],
             [
                 'title' => 'KHÓA HỌC LẬP TRÌNH .NET',
-                'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
-                Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
-                quốc tế.',
+                'description' => 'Phát triển ứng dụng web sử dụng nền tảng ASP.NET Core MVC.
+                 Để học tốt khóa học yêu cầu học viên đã có kiến thức C# và Frontend.',
                 'fee' => '6.000.000 VND','start_date' => '2/2/24',
                 'duration' => '40 giờ'
             ],
             [
                 'title' => 'LẬP TRÌNH SQL SERVER',
-                'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
-                Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
-                quốc tế.',
-                'fee' => '4.500.000 VND','start_date' => '2/2/24',
+                'description' => 'Trang bị những kiến thức nền tảng vững chắc về SQLServer như các kỹ thuật: 
+                lọc dữ liệu, phân tích, thiết kế và quản trị cơ sở dữ liệu, ...',
+                'fee' => '4.500.000 VND',
+                'start_date' => '2/24',
                 'duration' => '30 giờ'
             ],
         ];
         // Hien thi khoa hoc
-        echo '<div class="container-fluid mt-5">';
-            echo '<h1 style="color: rgba(255,0,0,0.45)">KHÓA HỌC SẮP KHAI GIẢNG</h1>';
+        echo '<div class="container mt-5">';
+            echo '<h1 style="color: #751515;">KHÓA HỌC SẮP KHAI GIẢNG</h1>';
             echo '<div class="row">';
                 $courseCount = 0;
                 foreach ($courses as $course) {
@@ -91,12 +91,12 @@
                         echo '<div class="w-100"></div>'; // Tạo một dòng mới sau mỗi hàng
                     }
                     echo '<div class="course col-sm-4">';
-                        echo '<img src="./Img/6033159_2 - Copy.jpg" style="width: 100%">';
-                        echo "<h5> {$course['title']} </h5>";
+                        echo '<img src="./Img/6033159_2%20-%20Copy.jpg    " style="width: 90%; margin-left: 20px;">';
+                        echo "<h5>{$course['title']}</h5>";
                         echo "<p> {$course['description']} </p>";
-                        echo "<p> <i class='fa fa-gift'></i> {$course['fee']} </p>";
-                        echo "<p> <i class='fa-solid fa-clock'></i> Khai giảng:{$course['start_date']} </p>";
-                        echo "<p> <i class='fa fa-bookmark'></i> Thời lượng:{$course['duration']} </p>";
+                        echo "<p> <i style='color: darkred' class='fa fa-gift'></i> {$course['fee']} </p>";
+                        echo "<p> <i style='color: darkred' class='fa-solid fa-clock'></i> Khai giảng: {$course['start_date']} </p>";
+                        echo "<p> <i style='color: darkred' class='fa fa-bookmark'></i> Thời lượng: {$course['duration']} </p>";
                     echo '</div>';
                     $courseCount++;
                 }
