@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/fontawesome.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/fontawesome.min.css">
@@ -91,7 +91,7 @@
                         echo '<div class="w-100"></div>'; // Tạo một dòng mới sau mỗi hàng
                     }
                     echo '<div class="course col-sm-4">';
-                        echo '<img src="./Img/6033159_2%20-%20Copy.jpg    " style="width: 90%; margin-left: 20px;">';
+                        echo '<img class="img-thumbnail" src="./Img/6033159_2%20-%20Copy.jpg" style="width: 100%;">';
                         echo "<h5>{$course['title']}</h5>";
                         echo "<p> {$course['description']} </p>";
                         echo "<p> <i style='color: darkred' class='fa fa-gift'></i> {$course['fee']} </p>";
