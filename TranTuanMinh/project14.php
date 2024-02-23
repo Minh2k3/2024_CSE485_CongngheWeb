@@ -51,19 +51,6 @@
         "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Vietnam"
     );
 
-    function randomWord($length = 5) {
-        $chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        $word = "";
-        for ($i = 0; $i < $length; $i++) {
-            $word .= $chars[mt_rand(0, strlen($chars) - 1)] . " ";
-        }
-        return $word;
-    }
-
-    function printCode() {
-        $word = randomWord();
-        echo $word;
-    }
     ?>
     <div class="container mt-5">
         <p class="underline fw-bold h4">Basic Info</p>
@@ -219,11 +206,11 @@
                     <td class="col-2 fw-bold">Are you human?</td>
                     <td class="col-10">
                         <div>
-                            <h2 id="randomWord fw-bold">
+                            <p id="randomWord" class="fw-bold display-3">
                                 <?php
                                     printCode();
                                 ?>
-                            </h2>
+                            </p>
                             <button type="button" class="fw-bold col-12 border-0 bg-white" id="btnChange">Click to change</button>
                             <input type="text" class="col-12" name="human" id="">
                         </div>
@@ -249,5 +236,30 @@
     CKEDITOR.replace( 'post_content', {
         height: "100px"
     } );
+</script>
+<?php
+    function randomWord($length = 5) {
+        $chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $word = "";
+        for ($i = 0; $i < $length; $i++) {
+            $word .= $chars[mt_rand(0, strlen($chars) - 1)] . " ";
+        }
+        return $word;
+    }
+
+    function printCode() {
+        $word = randomWord();
+        echo $word;
+    }
+?>
+<script>
+    // var btn = document.getElementById('btnChange');
+    // btn.onclick = function() {
+    //     change();
+    // }
+    document.getElementById('btnChange').addEventListener('click', change);
+    function change() {
+        document.getElementById('randomWord').innerHTML = "<?php printCode(); ?>";
+    }
 </script>
 </html>
