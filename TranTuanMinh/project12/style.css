@@ -1,0 +1,24 @@
+nav {
+    background-color: #0a1f77;
+}
+.border-left {
+    display: inline-block;
+    border-left: 1px solid #fff;
+}
+li {
+    padding: 0 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #275e97;
+}
+
+.dropdown:hover  {
+    background-color: #275e97;
+}
+
+.dropdown-item:hover {
+    background-color: #03dbfd;
+    font-style: italic;
+}

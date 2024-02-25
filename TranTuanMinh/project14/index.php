@@ -4,39 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project14</title>
-    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/fontawesome.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/fontawesome.min.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/solid.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/solid.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.18.0/ckeditor.js"></script>
-    <style>
-        .underline {
-            border-bottom: 1px solid #ccc;
-        }
-
-        .submit button {
-            background-color: #ccc;
-        }
-
-        .submit button:hover {
-            background-color: #9b292a;
-        }
-
-        .submit button:active {
-            background-color: green;
-        }
-
-        #btnChange:hover {
-            color: #9b292a;
-        }
-
-        .form-select {
-            border: 1px solid #000;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <?php

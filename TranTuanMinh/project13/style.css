@@ -1,0 +1,25 @@
+body {
+    /*background-color: aquamarine;*/
+}
+.course {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.course h4 {
+    color: #333;
+    margin-top: 10px;
+}
+.course p {
+    color: #666;
+}
+.course i {
+    color: #9b292a;
+    padding-right: 5px;
+}
+h1 {
+    color: #9b292a;
+    border-left: #9b292a 8px solid;
+    padding-left: 5px;
+    margin: 15px 0;
+}

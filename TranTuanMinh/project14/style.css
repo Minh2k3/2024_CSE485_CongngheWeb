@@ -1,0 +1,23 @@
+.underline {
+    border-bottom: 1px solid #ccc;
+}
+
+.submit button {
+    background-color: #ccc;
+}
+
+.submit button:hover {
+    background-color: #9b292a;
+}
+
+.submit button:active {
+    background-color: green;
+}
+
+#btnChange:hover {
+    color: #9b292a;
+}
+
+.form-select {
+    border: 1px solid #000;
+}
