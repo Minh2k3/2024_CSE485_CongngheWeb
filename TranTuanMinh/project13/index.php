@@ -19,42 +19,42 @@
         $courses = [
             [
                 'title' => 'LẬP TRÌNH VIÊN QUỐC TẾ',
-                'img' => '../Images/takt op destiny.jpg',
+                'img' => './Images/takt op destiny.jpg',
                 'description' => 'Chương trình đào tạo chuẩn quốc tế và toàn diện. Phù hợp với học sinh tốt nghiệp THPT, sinh viên và người định hướng theo nghề lập trình chuyên nghiệp.',
                 'fee' => '15.000.000 VND','start_date' => '2/2/24',
                 'duration' => '2 - 2.5 năm'
             ],
             [
                 'title' => 'LẬP TRÌNH WEB FULLSTACK',
-                'img' => '../Images/Kaori_Miyazono.jpg',
+                'img' => './Images/Kaori_Miyazono.jpg',
                 'description' => 'Khóa học phù hợp với người bắt đầu lập trình hoặc người chuyển nghề. Trang bị từ frontend đến backend, xây dựng website hoàn chỉnh sau khóa học.',
                 'fee' => 'Ưu đãi giảm 15% học phí','start_date' => '2/2/24',
                 'duration' => '2 - 2.5 năm'
             ],
             [
                 'title' => 'LẬP TRÌNH JAVA FULLSTACK',
-                'img' => '../Images/retro-punk-anime-girl-lying-on-bed-5k-aj-1920x1080.jpg',
+                'img' => './Images/retro-punk-anime-girl-lying-on-bed-5k-aj-1920x1080.jpg',
                 'description' => 'Phát triển ứng dụng web cơ bản đến nâng cao bằng Java, các ứng dụng doanh nghiệp sử dụng J2EE, Servlet, JSP, Spring Framework, EJB,...',
                 'fee' => 'Ưu đãi giảm 15% học phí','start_date' => '2/2/24',
                 'duration' => '236 giờ'
             ],
             [
                 'title' => 'LẬP TRÌNH PHP & LARAVEL',
-                'img' => '../Images/Shouko Nishimiya.png',
+                'img' => './Images/Shouko Nishimiya.png',
                 'description' => 'PHP là một trong các ngôn ngữ thiết kế web mạnh nhất. Khóa học trang bị kỹ năng xây dựng web hoàn chỉnh sử dụng PHP kết hợp Laravel Framwork.',
                 'fee' => '9.600.000 VND','start_date' => '2/2/24',
                 'duration' => '36 giờ'
             ],
             [
                 'title' => 'KHÓA HỌC LẬP TRÌNH .NET',
-                'img' => '../Images/trungtru.jpg',
+                'img' => './Images/trungtru.jpg',
                 'description' => 'Phát triển ứng dụng web sử dụng nền tảng ASP.NET Core MVC. Để học tốt khóa học yêu cầu học viên đã có kiến thức C# và Frontend.',
                 'fee' => '6.000.000 VND','start_date' => '2/2/24',
                 'duration' => '40 giờ'
             ],
             [
                 'title' => 'LẬP TRÌNH SQL SERVER',
-                'img' => '../Images/Mishuha.png',
+                'img' => './Images/Mishuha.png',
                 'description' => 'Trang bị những kiến thức nền tảng vững chắc về SQL Server như các kỹ thuật: lọc dữ liệu, phân tích, thiết kế và quản trị cơ sở dữ liệu,..',
                 'fee' => '4.500.000 VND','start_date' => '2/2/24',
                 'duration' => '30 giờ'
