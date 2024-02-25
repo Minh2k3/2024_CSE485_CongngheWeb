@@ -66,7 +66,7 @@
             echo '<h1>KHÓA HỌC SẮP KHAI GIẢNG</h1>';
             echo '<div class="row">';
                 foreach ($courses as $course) {
-                    echo '<div class="course col-sm-4 col-md-4">';
+                    echo '<div class="course col-sm-4 col-md-4 ">';
                         echo '<img src="' . $course['img'] .'" alt="Hình ảnh khóa học" style="width: 100%;">';
                         echo '<h4>' . $course['title'] . '</h4>';
                         echo '<p>' . $course['description'] . '</p>';

@@ -9,6 +9,15 @@ li {
     padding: 0 10px;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #275e97;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: -10px;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
     background-color: #275e97;
