@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách khóa học</title>
+    <title>List Courses</title>
     <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/fontawesome.css">
     <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/solid.css">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -62,14 +63,14 @@
             // Thêm các khóa học khác vào đây
         ];
         // Hiển thị danh sách khóa học
-        echo '<div class="container mt-3">';
+        echo '<div class="container-sm container-md mt-3">';
             echo '<h1>KHÓA HỌC SẮP KHAI GIẢNG</h1>';
             echo '<div class="row">';
                 foreach ($courses as $course) {
-                    echo '<div class="course col-sm-4 col-md-4 ">';
+                    echo '<div class="course col-sm-4 col-md-4 d-sm-block d-md-block">';
                         echo '<img src="' . $course['img'] .'" alt="Hình ảnh khóa học" style="width: 100%;">';
                         echo '<h4>' . $course['title'] . '</h4>';
-                        echo '<p>' . $course['description'] . '</p>';
+                        echo '<p class="text"">' . $course['description'] . '</p>';
                         echo '<p><i class="fa fa-gift" aria-hidden="true"></i>Học phí: ' . $course['fee'] . '</p>';
                         echo '<p><i class="fa-solid fa-clock"></i>Khải giảng: ' . $course['start_date'] . '</p>';
                         echo '<p><i class="fa fa-bookmark" aria-hidden="true"></i>Thời lượng: ' . $course['duration'] . '</p>';

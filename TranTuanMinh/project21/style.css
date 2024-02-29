@@ -1,0 +1,17 @@
+.btn-like {
+    background-color: transparent;
+    color: red;
+    border: none;
+}
+.btn-like:hover {
+    color: red;
+    background-color: #ccc;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+h1 {
+    color: #e59319;
+}

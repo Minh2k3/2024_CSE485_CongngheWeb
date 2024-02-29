@@ -1,0 +1,10 @@
+.all {
+    border: 0px solid #00c3ff;
+    border-radius: 5%;
+}
+
+.small-image {
+    max-width: 5rem;
+    height: auto;
+    /* border-radius: 5%; */
+}
