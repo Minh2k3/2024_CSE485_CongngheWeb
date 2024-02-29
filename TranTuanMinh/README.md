@@ -4,9 +4,9 @@
 ## Project 12  
 
 Yêu cầu: Tạo thanh navbar kết hợp dữ liệu động   
- ![Project12 exam](/NoteForReadme/project12_exam.jpg)   
+ ![Project12 exam](https://github.com/Minh2k3/2024_CSE485_CongngheWeb/blob/himakevolution/TranTuanMinh/NoteForReadme/project12_exam.JPG)   
 Mở rộng: Đã thêm các cấp độ con cho từng mục nội dung  
- ![Project12 UI](/NoteForReadme/project12_code.jpg)  
+ ![Project12 UI](https://github.com/Minh2k3/2024_CSE485_CongngheWeb/blob/himakevolution/TranTuanMinh/NoteForReadme/project12_code.JPG)  
 Chưa hoàn thiện: Chưa responsive, CSS xấu  
 
 ## Project 13  
