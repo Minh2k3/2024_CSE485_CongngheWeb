@@ -42,5 +42,29 @@ $products = [
         "price" => 10,
         "description" => "A comfortable and stylish Short.",
         "img" => "./assets/images/img2-2.jpg",
+    ],
+
+    [
+        "id" => 5,
+        "name" => "Shorts",
+        "price" => 10,
+        "description" => "A comfortable and stylish Short.",
+        "img" => "./assets/images/img2-2.jpg",
+    ]
+        ,
+    [
+        "id" => 5,
+        "name" => "Shorts",
+        "price" => 10,
+        "description" => "A comfortable and stylish Short.",
+        "img" => "./assets/images/img2-2.jpg",
+    ]
+    ,
+    [
+        "id" => 5,
+        "name" => "Shorts",
+        "price" => 10,
+        "description" => "A comfortable and stylish Short.",
+        "img" => "./assets/images/img2-2.jpg",
     ]
     ];
