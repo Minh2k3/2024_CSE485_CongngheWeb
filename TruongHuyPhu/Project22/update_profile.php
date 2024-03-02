@@ -1,36 +1,39 @@
 <?php
-include 'user.php';
+include_once 'user.php';
 // Check if form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Validate and update user information
+//    // Validate amd update user profile
     $errors = [];
-    $user['name'] = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    // Handle avatar upload (similar to previous exercise)
     $allowedExtensions = ['jpg', 'jpeg', 'png'];
-    $maxSize = 1048576; // 1MB
-    $targetDir = "uploads/"; // Adjust directory path
+    $maxSize = 1048576;
+    $targetDir = 'assets/images/';
     if (!empty($_FILES['avatar']['tmp_name'])) {
         $fileInfo = pathinfo($_FILES['avatar']['name']);
         if (!in_array($fileInfo['extension'], $allowedExtensions)) {
-            $errors[] = "Only JPG, JPEG, and PNG files are allowed.";
+            $errors[] = 'Invalid file type. Only JPG, JPEG, and PNG files are allowed.';
         } else if ($_FILES['avatar']['size'] > $maxSize) {
-            $errors[] = "File size must be less than 1MB.";
+            $errors[] = 'File size exceeds limit. Limit is 1MB.';
         } else {
-            $fileName = uniqid() . "." . $fileInfo['extension'];
-            $targetFile = $targetDir . $fileName;
-            echo $targetFile;
-            if (move_uploaded_file($_FILES['avatar']['tmp_name'], $targetFile)) {
-                $user['avatar'] = $targetFile; // Update avatar URL in array
+            $fileName = uniqid() . '.' . $fileInfo['extension'];
+            $targetPath = $targetDir . $fileName;
+            if (move_uploaded_file($_FILES['avatar']['tmp_name'], $targetPath)) {
+                $user['avatar'] = $targetPath;
             } else {
-                $errors[] = "Failed to upload file.";
+                $errors[] = 'Failed to upload file.';
             }
         }
     }
-    // Handle errors or update profile
+
+    // Handle errors or update user profile
     if (empty($errors)) {
-        header('location:index.php');
+        session_start();
+        $_SESSION['new_Profile'] = $user;
+        header('Location: index.php');
     } else {
-        header('location:index.php?=error');
+//        header("Location: index.php");
+        echo "Error: ";
+        foreach ($errors as $error) {
+            echo "<br> - $error";
+        }
     }
 }
-

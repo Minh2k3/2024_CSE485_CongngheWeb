@@ -1,5 +1,11 @@
 <?php
-    include 'user.php';
+    session_start();
+    if (isset($_SESSION['new_Profile'])) {
+        $user = $_SESSION['new_Profile'];
+    }
+    else {
+        include_once 'user.php';
+    }
 ?>
 
 <!doctype html>
@@ -30,42 +36,29 @@
                     <div class="row"><a class="text-decoration-none text-dark mt-4" href="#">Billing</a></div>
                 </div>
                 <div class="col-6">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-7">
-                            <img src="<?php echo $user['avatar'] ?>" alt="" class="img-thumbnail">
+                    <form action="update_profile.php" method="post" class="justify-content-sm-center" enctype="multipart/form-data">
+                        <img src="<?= $user['avatar'] ?>" class="rounded mx-auto d-block img-thumbnail" alt="Something like that">
+                        <div class="mb-3 mt-2">
+                            <input class="form-control" type="file" id="formFile" name="avatar">
+                            <button class="btn-danger mt-2" type="submit">Upload</button>
                         </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-1"></div>
-                        <div class="col-11">
-                            <form class="input-group input-group-sm mb-3" action="update_profile.php" method="post" enctype="multipart/form-data">
-                                <input type="file" accept="image/*" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?php echo $user['name']?>">
-                                <button class="btn btn-danger" type="submit">Update Profile</button>
-                            </form>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?= $user['name'] ?>">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-5"></div>
-                <div class="col-7">
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text">Full Name</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?php echo $user['name']?>">
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text">Email</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?php echo $user['email']?>">
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text">Phone Number</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?php echo $user['phoneNumber']?>">
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text">Company Name</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?php echo $user['companyNumber']?>">
-                    </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?= $user['email'] ?>">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Phone</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?= $user['phone'] ?>">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Address</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="<?= $user['address'] ?>">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
