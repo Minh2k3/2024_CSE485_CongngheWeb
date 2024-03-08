@@ -59,7 +59,7 @@
                         <div class="col-sm-8 col-md-8">
                             <form class="justify-content-center container" action="uploadProfile.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group mb-3">
-                                    <div class="rounded-circle overflow-hidden mx-auto d-block small-image" style="max-width: 5rem; height: auto;">
+                                    <div class="rounded-circle overflow-hidden mx-auto d-block square-image" style=" max-width: 5rem; height:5rem;">
                                         <img class="img-fluid" src="<?=$user['avatar']?>" alt="Avatar">
                                     </div>
                                     <div class="d-flex justify-content-center mt-3">

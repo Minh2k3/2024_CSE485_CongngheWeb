@@ -3,8 +3,14 @@
     border-radius: 5%;
 }
 
-.small-image {
+.square-image {
     max-width: 5rem;
-    height: auto;
+    height:5rem;
     /* border-radius: 5%; */
+}
+
+.square-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

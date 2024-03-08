@@ -21,7 +21,7 @@
         <?php endif; ?>
         <?php for ($i = max(1, $currentPage - 2); $i <= min($totalPages, $currentPage + 2); $i++): ?>
             <?php if ($i >= $currentPage - 2 && $i <= $currentPage + 2): ?>
-                <li class="page-item <?php echo $i == $currentPage ? 'active' : '' ?>">
+                <li class="page-item <?= ($i == $currentPage ? 'active' : '') ?>">
                     <a class="page-link" href="?page=<?=$i?>&itemsperpage=<?=$itemsPerPage?>"><?php echo $i ?></a>
                 </li>
             <?php endif; ?>
